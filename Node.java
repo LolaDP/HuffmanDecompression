@@ -1,3 +1,4 @@
+
 public class Node {
 	private String label;
 	private int freq;
@@ -22,7 +23,7 @@ public class Node {
             return false;
         }
 	}
-
+	
 	public String getLabel() {
 		return label;
 	}
@@ -62,8 +63,5 @@ public class Node {
 		return code;
 	}
 
-	
-	
-	
 
 }
