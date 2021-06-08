@@ -9,6 +9,7 @@ public class Tree {
 	}
 		
 	public Node creaTree() {
+		//methode pour creer l'arbre d'huffman
 		while (listeNoeud.size()!=1) {
 	        //recherche des f min
 	        Node min1=listeNoeud.get(0);
@@ -37,7 +38,7 @@ public class Tree {
 	}
 	
 	public void codage(Node arbre) {
-	    //methode qui associe le code binaire associe a chaque noeud de l'arbre
+	    //methode qui prend en argument la racine de l'arbre et associe le code binaire associe a chaque noeud de l'arbre 
 	    //initialisation sur le noeud racine
 	    if (arbre.getCode()==null) {
 	        arbre.setCode("");
