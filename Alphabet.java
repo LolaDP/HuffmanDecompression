@@ -13,6 +13,7 @@ public class Alphabet {
 	}
 
 	public ArrayList<ArrayList<String>> readAlpha(){
+		//methode qui lit l'alphabet et renvoit une liste de liste contenant les label et frequence [[label1,frequence1],...]
 		ArrayList<ArrayList<String>> alpha=new ArrayList<ArrayList<String>>();
 		try {
 			File file=new File(nomFf);
@@ -39,7 +40,8 @@ public class Alphabet {
 			fr.close();  
 		}
 		catch(IOException e){
-			e.printStackTrace();
+			System.out.println("An error occurred.");
+		    e.printStackTrace();
 	    }
 		return alpha;
 	}
@@ -50,9 +52,10 @@ public class Alphabet {
 		return nomFf;
 	}
 
-	//creation liste des noeuds associe a chaque caractere
+	//creation de la liste des noeuds associe a chaque caractere
 	public ArrayList<Node> creaLN(ArrayList<ArrayList<String>> alpha){
 		ArrayList<Node> listenoeud= new ArrayList<Node>();
+		//pour chaque caractere on cree le noeud correspondant et on l'ajoute a la liste des feuilles de l'arbre d'huffman
 		for (int i=0; i<alpha.size();i++) {
 			Node n=new Node(alpha.get(i).get(0),Integer.parseInt(alpha.get(i).get(1)),"");
 		    listenoeud.add(n);
