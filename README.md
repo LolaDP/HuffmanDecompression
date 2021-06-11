@@ -30,5 +30,9 @@ So, you just have to start the program which will create the unzipped file in th
     - the compression ratio
     - the average number of storage bits for a character of the compressed text
     
-liste :
-  - b
+So, you just have to start the program which will create the unzipped file in the same folder and show you in the console :
+  - the list [[character, frequency]] of the alphabet
+  - the sequence of bits corresponding to the compressed test
+  - the unzipped text
+  - the compression ratio
+  - the average number of storage bits for a character of the compressed text
