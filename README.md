@@ -16,6 +16,7 @@ This is a school project where I have to create a Huffman algorithm to decompres
 #Language used: Java
 
 #How it works :
+
   You have to create a new Java Project whose classes are files named "Huffman ..." (for example "HuffmanTest") and save the alphabet and compressed file in the same folder.
 In the HuffmanTest class we foremost create an HuffmanAlphabet object whith the exemple_freq.txt file to create the double list [[character, frequency]] and then the list of leaves of the tree. 
 Next, we create the Huffman tree and we associate its binary code with each node of the tree. 
