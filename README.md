@@ -23,9 +23,12 @@ Next, we create the Huffman tree and we associate its binary code with each node
 An HuffmanDecompression object is cerated with the exemple_comp.bin file. We first convert the text to a bit sequence with toByteArray() and we translate this sequence into a character string with treePath(). With this character string we create the new file with fileCreation(). 
 Finally, the methods compressions_rate() and compression_rateBis() return the compression ratio from different arguments and the nb_bit() method returns the average number of storage bits for a character of the compressed text.
 
-  So, you just have to start the program which will create the unzipped file in the same folder and show you in the console: 
+So, you just have to start the program which will create the unzipped file in the same folder and show you in the console: 
     - the list [[character, frequency]] of the alphabet
     - the sequence of bits corresponding to the compressed test
     - the unzipped text
     - the compression ratio
     - the average number of storage bits for a character of the compressed text
+    
+liste :
+  - b
