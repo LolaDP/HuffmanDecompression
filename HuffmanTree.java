@@ -37,21 +37,21 @@ public class HuffmanTree {
 	    return(listNodes.get(0));
 	}
 	
-	public void coding(HuffmanNode arbre) {
+	public void coding(HuffmanNode root) {
 	    //method which takes the root of the tree as an argument and associates the binary code associated with each node of the tree
 	    //initialization on the root node
-	    if (arbre.getCode()==null) {
-	        arbre.setCode("");
+	    if (root.getCode()==null) {
+	        root.setCode("");
 	    }
 	    //each time we go to the left in the tree we add a 0 to the character code
-	    if (arbre.getlChild()!=null) {
-	        arbre.getlChild().setCode(arbre.getCode()+"0");
-	        coding(arbre.getlChild()); 
+	    if (root.getlChild()!=null) {
+	        root.getlChild().setCode(root.getCode()+"0");
+	        coding(root.getlChild()); 
 	    }
 	    //each time we go to the right in the tree we add a 1 to the character code
-	    if (arbre.getrChild()!=null) {
-	        arbre.getrChild().setCode(arbre.getCode()+"1");
-	        coding(arbre.getrChild());
+	    if (root.getrChild()!=null) {
+	        root.getrChild().setCode(root.getCode()+"1");
+	        coding(root.getrChild());
 	    }
 	}
 	
